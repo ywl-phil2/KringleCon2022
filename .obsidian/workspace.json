@@ -1,0 +1,152 @@
+{
+  "main": {
+    "id": "63250a04a4d7cbd8",
+    "type": "split",
+    "children": [
+      {
+        "id": "00e4a3bb908191fb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "65608b9d723777aa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Elfen Ring.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "26a4a38184f43475",
+    "type": "split",
+    "children": [
+      {
+        "id": "904d7acf777a7b75",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "18cc5089d7eb480c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b9678d410f1ae540",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0241032259b834b2",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c1326bb547cdbed6",
+    "type": "split",
+    "children": [
+      {
+        "id": "67b2b6fae957ac38",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "42e73a9aa61c4b8d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Elfen Ring.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5caa05f7da36cd9f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Elfen Ring.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4ae75d12968ea091",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "752ac116f50d3514",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Elfen Ring.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "65608b9d723777aa",
+  "lastOpenFiles": [
+    "Tolkien Ring.md",
+    "KringleCon 2022 Orientation.md",
+    "Elfen Ring.md",
+    "KringleCon 2022 Wrap-up.md",
+    "README.md",
+    "images/Pasted image 2020230.md",
+    "Cloud Ring.md",
+    "Web Ring.md",
+    "Burning Ring of Fire.md",
+    "cicd-terms.jpg"
+  ]
+}

@@ -1,4 +1,4 @@
-
+# Getting Started
 ![Orientation](images/Orientation.jpg)
 ## Talk to Jingle Ringford
 You start off in a snowy wasteland, and Jingle is the only character in sight. Click on him, repeatedly if needed, to get all the info.  Jingle gives you a badge, and instructs you to interact with the KTM for your wallet, and Cranberry Pi (described below).
@@ -46,6 +46,7 @@ The KTM is the machine to the left. No input is required to create a wallet - it
 The terminal is the green-framed box on the table. Click on it and it shows tmux with some instructions. Type 'answer' in the top pane as requested.
 
 ![600](images/Pasted%20image%2020230104220356.png)
+
 After that, the gates will open and you can walk through to the next area. 
 
 ## Talk to Santa

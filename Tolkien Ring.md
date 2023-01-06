@@ -1,4 +1,4 @@
-
+# Tolkien Ring
 ## Wireshark Practice
 ![](images/Pasted%20image%2020230105172206.png)
 
@@ -49,17 +49,20 @@ Erm, *yes*? Because that's what the elf asked us to look at the terminal. Possib
 ![](images/Pasted%20image%2020230105172326.png)
 
 **Q1. What month/day/year did the attack take place? For example, 09/05/2021.**
+
 I started with viewing the log in the bottom frame (`$ more powershell.evtx.log`). It returned the following, with the answer of *12/24/2022*.
 ```log
 Verbose 12/24/2022 10:44:53 AM  Microsoft-Windows-PowerShell    4105    Starting Command        "Started invocation of ScriptBlock ID: 284c3131-3119-4d90-9420-a06130a8ca1b
 ```
 **Q2. An attacker got a secret from a file. What was the original file's name?**
 We want to find the files that were read. Powershell uses Get-Content for reading objects, including files: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-content?view=powershell-7.3
+
 For the rest of the puzzle, I found it easier to open the file in the bottom pane and search (`$ vi powershell.evtx.log` then use vi search commands from https://phoenixnap.com/kb/search-in-vim-vi). That yielded an answer of *Recipe*:
 ```
 12/24/2022 3:05:23 AM   Microsoft-Windows-PowerShell    4103    Executing Pipeline      "CommandInvocation(Get-Content)  ""Get-Content"" ParameterBinding(Get-Content): name=""Path""; value="".\Recipe""`
 ```
 **Q3. The contents of the previous file were retrieved, changed, and stored to a variable by the attacker. This was done multiple times. Submit the last full PowerShell line that performed only these actions.**
+
 Using vi to looking through each Get-Content of Recipe, and noting any assignments to variables (marked by $), I saw:  
  
 ```
@@ -129,6 +132,7 @@ alert dns $HOME_NET any -> any any (msg:"Known bad DNS lookup, possible Dridex i
 ```
 
 **Q2. The infected IP address 192.185.57.242 communicates with internal systems over HTTP. When there's a match, the message (msg) should read Investigate suspicious connections, possible Dridex infection.**
+
 This one took some time - I was filtering packets when receiving from the infected IP (454 packets caught), but the question mentions any communication so the answer should mirror the first rule to catch traffic both ways.
 ``` Suricata
 alert http [192.185.57.242] any -> $HOME_NET any (msg:"Investigate suspicious connections, possible Dridex infection";rev:1;sid:2032974;) 
@@ -141,6 +145,7 @@ alert ip any any -> any any (tls.cert_subject;content:"CN=heardbellith.Icanwepeh
 ```
 
 **Q4. Let's watch for one line from the JavaScript: let byteCharacters = atob. Oh, and that string might be GZip compressed - I hope that's OK!**
+
 These documents were useful : https://suricata.readthedocs.io/en/suricata-6.0.0/rules/payload-keywords.html  and https://suricata.readthedocs.io/en/suricata-6.0.0/rules/http-keywords.html#file-data.
 ```Suricata
 alert http any any -> any any (content:"let byteCharacters = atob";msg:"Suspicious JavaScript function, possible Dridex infection";rev:1;sid:2032976;)
