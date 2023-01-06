@@ -1,5 +1,5 @@
 My first SANS Holiday Hack Challenge! 
-![holidayhack2022](holidayhack2022.jpg)
+![holidayhack2022](images/holidayhack2022.jpg)
 
 ## Orientation
 
