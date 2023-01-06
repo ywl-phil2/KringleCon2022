@@ -1,3 +1,5 @@
+# Burning Ring of Fire
+
 ![](images/Pasted%20image%2020230104232024.png)
 ##  Buy a Hat
 **Q1. Travel to the Burning Ring of Fire and purchase a hat from the vending machine with KringleCoin.**

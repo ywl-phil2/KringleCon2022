@@ -1,3 +1,4 @@
+# Finale
 And we are done! Off to Santa's castle for a party, and look who's there! It's Grinchum, looking much better as Smilegol. 
 ![](images/finale.jpg)
 
