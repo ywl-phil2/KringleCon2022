@@ -1,16 +1,22 @@
 # Web Ring
 ![750](images/Pasted%20image%2020230104225032.png)
 ##  Naughty IP
+
 **Q1. The first attack is a [brute force](https://owasp.org/www-community/attacks/Brute_force_attack) login. What's the first username tried?**
+
 From the hint, Wireshark > Statistics > Conversations (sort by most bytes first),
 *18.222.86.32* has the most requests and seems suspicious. 
 
 ##  Credential Mining
+
 **Q1. The first attack is a [brute force](https://owasp.org/www-community/attacks/Brute_force_attack) login. What's the first username tried?**
+
 Apply filter `ip.src == 18.222.86.32 and http and http.request.method == POST` and sort by requests. The smallest packet number is 7279, and the username/password are "*alice*/philip".
 
 ## 404 FTW
+
 **Q1. The next attack is [forced browsing](https://owasp.org/www-community/attacks/Forced_browsing) where the naughty one is guessing URLs. What's the first successful URL path in this attack?**
+
 First apply filter `ip.src == 18.222.86.32 and http  and http.request.method == GET` to see where the forced browsing starts - the first instance is for http://www.toteslegit.us/0 at frame 24475. So we modify the filter to where 18.222.86.32 receives a successful response (200) and the frame number is larger to get a result of */proc*.
 `ip.dst == 18.222.86.32 and http and http.response.code == 200  and frame.number >= 24475`
 
@@ -24,6 +30,7 @@ From the hint (https://www.sans.org/blog/cloud-instance-metadata-services-imds-/
 ![Pasted image 20230104225403](images/Pasted%20image%2020230104225403.png)
 
 **Q1. Open the door to the Boria Mines. Help Alabaster Snowball in the Web Ring to get some hints for this challenge.**
+
 Discord hints mentioned svg:
 https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Getting_Started
 
@@ -96,6 +103,7 @@ To start, use browser dev tools to inspect network traffic when interacting. For
 Keep dropping the icons - at some point the icon group on the right refreshes. As the princess and fountain respond, they also give hints in CAPS - note them down.
 
 Also, at some point, there will be an "omninous" eye that the fountain asks you to click away. BEFORE you do that, note its path - `static/images/stage2ring-eyecu_2022.png`. 
+
 ![fountainEye](images/fountainEye.jpg)
 
 Eventually, you get to a point where the icon group no longer refreshes and the princess and fountain just repeat themselves. At this point, the full the hint list is TAMPER (don't tamper with cookie), TRAFFIC FLIES, PATHs (created path), PATH is closed,  APP, TYPE (of language), SIMPLE FORMAT and RINGLIST (file).  You also get the impression that the princess really likes rings - especially silver, which she doesn't have. 
@@ -152,12 +160,12 @@ Next, we want to try XXE. Using https://owasp.org/www-community/vulnerabilities/
 <reqType>xml</reqType>
 </root>
 ```
-How did we deduce this particular file path? With lots of blood, sweat and tears! No, really, it was  others kindly giving me hints after I had hit the wall for several hours. If I had to guess at the designer's mind, I think we were supposed to deduce the \$webroot/\$path,\$file.\$fileExtension, using:
+How did we deduce this particular file path? If I had to guess at the designer's mind, I think we were supposed to deduce the \$webroot/\$path,\$file.\$fileExtension, using:
 - \$webroot: APP was a hint keyword, plus it's common convention for webroots
 - \$path: static, this came from the "ominous eye" path (/static/images)
 - \$file: RINGLIST was a hint keyword
 - \$fileExtension: SIMPLE was a hint keyword, txt is the simplest format there is.
-Putting it together, we get `app/static/ringlist.txt`.  Kapeech?
+Putting it together, we get `app/static/ringlist.txt`.  Kapeesh?
 
 When we send it over the console, we get the response
 ``` json
@@ -169,6 +177,7 @@ When we send it over the console, we get the response
 ### Stage 4: Following lots of links
 Fetching that image (https://glamtarielsfountain.com/static/images/pholder-morethantopsupersecret63842.png) shows a picture of a folder with text "x_phial_pholder_2022" and a paper peeking out. The corner of the paper shows "bluering.txt", "redring.txt". 
 ![Pasted image 20230105000251](images/Pasted%20image%2020230105000251.png)
+
 
 We can try to fetch bluering.txt and redring.txt next (from this point I'll just show the body element for the XML, the request structure stays the same):. 
 ```javascript
@@ -207,7 +216,9 @@ That returns
 }
 ```
 Another day, another supersecretsomething.png.. we'll fetch that too. 
+
 ![Pasted image 20230105000442](images/Pasted%20image%2020230105000442.png)
+
 
 This turns out to be a picture of a red ring with text "goldring_to_be_deleted.txt " so we request that in XML:
 ```javascript
@@ -220,6 +231,7 @@ and receive the response:
  ...
 ```
 ### Fair Trade: Silver for Gold
+
 Now we've reached the (IMHO) most obtuse part of the puzzle.  I would NEVER have gotten this without the help of long suffering concierges on Discord. Playing Puzzle Designer again, I think we are supposed to piece these clues:
 - The princess really wants a silver ring
 - You really want the golden ring
