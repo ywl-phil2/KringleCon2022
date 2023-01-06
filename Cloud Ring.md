@@ -240,6 +240,7 @@ $ aws lambda get-function-url-config --function-name "smogmachine_lambda"
 ```
 
 And that concludes the Cloud Ring. 
+
 ![](images/CloudRing.jpg)
 
 

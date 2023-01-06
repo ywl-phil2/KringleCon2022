@@ -35,13 +35,11 @@ The TO-address (*0xc27A2D3DE339Ce353c0eFBa32e948a88F1C86554*) is that of the Kri
 **Q1.  Exploit flaws in a smart contract to buy yourself a Bored Sporc NFT. Find hints for this objective hidden throughout the tunnels.**
 1. Download the code from Professor Petabyte, location was given in a hint as  https://github.com/QPetabyte/Merkle_Trees
 2. If needed, install Docker and Linux subsys (for Windows machines) to run it.
-3. Examine merkletrees.py 
-
-From Readme, we should
-- Create a list of leaf values to include in the allowed list
-	- We will want to include OUR wallet address here
-- Call the method to find the proof 
-	- Location matters! The code assumes the proof is to be computed for the address at location 0, so our wallet address needs to be there (first address in 'allowlist').
+3. Examine merkletrees.py - from its Readme, we should
+	- Create a list of leaf values to include in the allowed list
+		- We will want to include OUR wallet address here
+	- Call the method to find the proof 
+		- Location matters! The code assumes the proof is to be computed for the address at location 0, so our wallet address needs to be there (first address in 'allowlist').
 4. Before that, we need to find at least one other address that was allowed. We can find that on the Bored Sporc Presale page, just pick any portrait's wallet and add that after the list. 
 ```python
 allowlist = [
@@ -71,7 +69,7 @@ function do_presale(){
 	};
 
 ```
-8. We resubmit our wallet and proof, pause the function in the debugger so we can add our root, and receive response.
+8. We resubmit our wallet and proof, pause the function in the debugger so we can swap in our root value for the hardcoded one, and receive this response.
 ```
 Success! You are now the proud owner of BSRS Token #<Some Token>. You can find more information at https://boredsporcrowboatsociety.com/TOKENS/<Token>, or check it out in the gallery!
 ```
@@ -84,4 +82,4 @@ With proud Sporc in hand, we can now exit with the Burning Ring of Fire.
 ![](images/FireRing.jpg)
 
 
-Jump to: [KringleCon 2022 Orientation](KringleCon%202022%20Orientation.md) | [Tolkien Ring](Tolkien%20Ring.md) | [Elfen Ring](Elfen%20Ring.md) | [Web Ring](Web%20Ring.md)| [Cloud Ring](Cloud%20Ring.md)|Burning Ring of Fire| [KringleCon 2022 Wrap Up](%20KringleCon%202022%20Wrap-up.md)
+Jump to: [KringleCon 2022 Orientation](KringleCon%202022%20Orientation.md) | [Tolkien Ring](Tolkien%20Ring.md) | [Elfen Ring](Elfen%20Ring.md) | [Web Ring](Web%20Ring.md)| [Cloud Ring](Cloud%20Ring.md)|Burning Ring of Fire| [KringleCon Wrap Up](KringleCon%202022%20Wrap-up.md)
