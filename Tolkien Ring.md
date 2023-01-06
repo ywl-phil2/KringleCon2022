@@ -47,6 +47,7 @@ Erm, *yes*? Because that's what the elf asked us to look at the terminal. Possib
 
 ## Windows Logs
 ![](images/Pasted%20image%2020230105172326.png)
+
 **Q1. What month/day/year did the attack take place? For example, 09/05/2021.**
 I started with viewing the log in the bottom frame (`$ more powershell.evtx.log`). It returned the following, with the answer of *12/24/2022*.
 ```log
@@ -154,9 +155,11 @@ With the above, we get our first golden ring - the Tolkien Ring. Nice LAN!
 
 ## Treasure Alert! 
 Before you leave this hall, be sure to look for the hidden treasure chest by zooming out (Ctrl-) in the browser. There is a chest with a VERY helpful hint for the Burning Ring of Fire. You get there by trying to arrow down at various spots in the ground until you find the tunnel entrance.
+
 ![hiddenChestInTR](images/hiddenChestInTR.jpg)
 
+
 Also, look for another chest near the entrance to the Elfen Ring as you move to the next Ring.
-![ 500](images/Pasted%20image%2020230104224726.png%20)
+![](images/Pasted%20image%2020230104224726.png%20)
 
 Jump to: [KringleCon 2022 Orientation](KringleCon%202022%20Orientation.md) | Tolkien Ring | [Elfen Ring](Elfen%20Ring.md) | [Web Ring](Web%20Ring.md)| [Cloud Ring](Cloud%20Ring.md)|[Burning Ring of Fire](Burning%20Ring%20of%20Fire.md)| [KringleCon 2022 Wrap-up](KringleCon%202022%20Wrap-up.md)
