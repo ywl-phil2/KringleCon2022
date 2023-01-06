@@ -167,4 +167,4 @@ Before you leave this hall, be sure to look for the hidden treasure chest by zoo
 Also, look for another chest near the entrance to the Elfen Ring as you move to the next Ring.
 ![](images/Pasted%20image%2020230104224726.png)
 
-Jump to: [KringleCon 2022 Orientation](KringleCon%202022%20Orientation.md) | Tolkien Ring | [Elfen Ring](Elfen%20Ring.md) | [Web Ring](Web%20Ring.md)| [Cloud Ring](Cloud%20Ring.md)|[Burning Ring of Fire](#Burning%20Ring%20of%20Fire.md)| [KringleCon 2022 Wrap Up](#%20KringleCon%202022%20Wrap-up.md)
+Jump to: [KringleCon 2022 Orientation](KringleCon%202022%20Orientation.md) | Tolkien Ring | [Elfen Ring](Elfen%20Ring.md) | [Web Ring](Web%20Ring.md)| [Cloud Ring](Cloud%20Ring.md)|[Burning Ring of Fire](Burning%20Ring%20of%20Fire.md)| [KringleCon 2022 Wrap Up](%20KringleCon%202022%20Wrap-up.md)
