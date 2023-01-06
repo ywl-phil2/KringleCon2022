@@ -1,7 +1,6 @@
-![ 900](Pasted%20image%2020230104222842.png)
-## Tolkien Ring
+![ 900](images/Pasted%20image%2020230104222842.png)
 
-### Wireshark Practice
+## Wireshark Practice
 **Q1.  There are objects in the PCAP file that can be exported by Wireshark and/or Tshark. What type of objects can be exported from this PCAP?**
 
 Open the pcap in Wireshark. File > Export Objects, see options:  *DICOM, HTTP, IMF, SMB, TFTP* 
@@ -39,7 +38,7 @@ So the answer is *Israel, South Sudan*.
 **Q7.  Is the host infected (Yes/No)?**
 Erm, *yes*? Because that's what the elf asked us to look at the terminal. Possible other sign: Wireshark highlighted some packets in red because it was sending RST, ACK.
 
-### Windows Logs
+## Windows Logs
 **Q1. What month/day/year did the attack take place? For example, 09/05/2021.**
 I started with viewing the log in the bottom frame (`$ more powershell.evtx.log`). It returned the following, with the answer of *12/24/2022*.
 ```log
@@ -106,7 +105,7 @@ Given that the substitution updated the ingredients, *yes*.
 10. What is the secret ingredient?
 From the substitution command above, it is *honey*.
 
-### Suricata Regatta
+## Suricata Regatta
 
 Tips before starting
 - There are existing rules in the rules file you can study, as well as this document on Suricata [rule format](https://suricata.readthedocs.io/en/suricata-6.0.0/rules/intro.html).
@@ -136,13 +135,15 @@ alert http any any -> any any (content:"let byteCharacters = atob";msg:"Suspicio
 alert http any any -> any any (file_data;content:"let byteCharacters = atob";msg:"Suspicious JavaScript function, possible Dridex infection";rev:1;sid:2032977;)
 ```
 
-With the above, we get our first golden ring - the Tolkien Ring. Nice LAN!
-![250](TolkienRing_gold.jpg)
 
+With the above, we get our first golden ring - the Tolkien Ring. Nice LAN!
+![250](images/TolkienRing_gold.jpg)
+
+## Treasure Alert! 
 Before you leave this hall, be sure to look for the hidden treasure chest by zooming out (Ctrl-) in the browser. There is a chest with a VERY helpful hint for the Burning Ring of Fire. You get there by trying to arrow down at various spots in the ground until you find the tunnel entrance.
-![hiddenChestInTR](hiddenChestInTR.jpg)
+![hiddenChestInTR](images/hiddenChestInTR.jpg)
 
 Also, look for another chest near the entrance to the Elfen Ring as you move to the next Ring.
-![ 500](Pasted%20image%2020230104224726.png%20)
+![ 500](images/Pasted%20image%2020230104224726.png%20)
 
 Jump to: [KringleCon 2022 Orientation](KringleCon%202022%20Orientation.md) | Tolkien Ring | [Elfen Ring](Elfen%20Ring.md) | [Web Ring](Web%20Ring.md)| [Cloud Ring](Cloud%20Ring.md)|[Burning Ring of Fire](Burning%20Ring%20of%20Fire.md)| [KringleCon 2022 Wrap-up](KringleCon%202022%20Wrap-up.md)
