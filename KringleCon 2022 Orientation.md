@@ -1,7 +1,3 @@
-My first SANS Holiday Hack Challenge! 
-![holidayhack2022](images/holidayhack2022.jpg)
-
-## Orientation
 
 ![Orientation](images/Orientation.jpg)
 ### Talk to Jingle Ringford
@@ -10,6 +6,7 @@ You start off in a snowy wasteland, and Jingle is the only character in sight. C
 ###  Get your badge
 Your badge is the yellow flower-like icon on your character - it's actually five golden rings.
 ![badgeOnChar](images/badgeOnChar.jpg)
+
 Clicking on it shows options you access throughout the game: 
 ![badgeOptions](images/badgeOptions.jpg)
 Most of these options can also be accessed during gameplay through the bar at the left. From top to bottom: Story (book icon), Destionations (map pin), Objectives (checkbox), Hints (Info/I), Hats (Wizard hat), Achievements (ribbon).
@@ -32,11 +29,11 @@ And again in this picture where the player has moved to another part of the game
 ## Create a wallet
 
 The KTM is the machine to the left. No input is required to create a wallet - it checks your account and generates a WALLET and KEY. Be sure to **WRITE THESE DOWN!**  You also receive a starting balance of 5 Kringle Coin.
-![ 400](images/Pasted%20image%2020230104220025.png%20)
-
+![Pasted image 20230104220025](Pasted%20image%2020230104220025.png)
 ## Use the terminal
 
-The terminal is the green-framed box on the table. Click on it and it shows tmux with some instructions. Type 'answer' in the top pane as requested. 
+The terminal is the green-framed box on the table. Click on it and it shows tmux with some instructions. Type 'answer' in the top pane as requested.
+
 ![600](images/Pasted%20image%2020230104220356.png)
 After that, the gates will open and you can walk through to the next area. 
 
@@ -48,7 +45,7 @@ For example, the following chest is seen between the Hall of Talks and Tolkien R
 ![500](images/Pasted%20image%2020230104224030.png)
 
 There is another chest in the Hall of Talks:
-![ 500](images/Pasted%20image%2020230104224421.png%20)
+![600](images/Pasted%20image%2020230104224421.png)
 
 
 Jump to: KringleCon 2022 Orientation | [Tolkien Ring](Tolkien%20Ring.md) | [Elfen Ring](Elfen%20Ring.md) | [Web Ring](Web%20Ring.md)| [Cloud Ring](Cloud%20Ring.md)|[Burning Ring of Fire](Burning%20Ring%20of%20Fire.md)| [KringleCon 2022 Wrap-up](KringleCon%202022%20Wrap-up.md)
