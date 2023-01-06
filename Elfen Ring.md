@@ -1,5 +1,5 @@
 
-![[Pasted image 20230104223355.png|700]]
+![700](Pasted%20image%2020230104223355.png)
 ### Clone with a Difference
 **Q1. We just need you to clone one repo: git clone git@haugfactory.com:asnowball/aws_scripts.git. This should be easy, right? Thing is: it doesn't seem to be working for me. This is a public repository though. I'm so confused!**
 
@@ -15,7 +15,7 @@ git clone https://haugfactory.com/asnowball/aws_scripts.git/
 ```
 
 ### Prison Escape
-![[Pasted image 20230104223511.png|700]]
+![700](Pasted%20image%2020230104223511.png)
 **Q1. Escape from a container. Get hints for this challenge from Bow Ninecandle in the Elfen Ring. What hex string appears in the host file `/home/jailer/.ssh/jail.key.priv`?**
 
 It appears we have sudo access, e.g. sudo ls -l. However we are in a jail under /samaways/ with little visibility into anything else. To see this:
@@ -55,7 +55,7 @@ Per instructions, we are to look for the hex string that appears in the host fil
 And it gives us the key (ASCII art omitted):    *082bb339ec19de4935867*
 
 ### Jolly CI/CD 
-![[Pasted image 20230104223618.png|700]]
+![700](Pasted%20image%2020230104223618.png)
 When we enter, we are told the environment can take 5 minutes to start up. Use the following command to wait until you see the server up:
 ```shell
 $ watch ping gitlab.flag.net.internal
@@ -160,7 +160,7 @@ git push
 
 ```
 Now, sit and wait. THIS CAN TAKE A MINUTE OR TWO, but we are rewarded with a message on the listener that a connection was received.
-![[cicd-terms.jpg]]
+![cicd-terms](cicd-terms.jpg)
 
 Running whoami and hostname on the listener shows that we are 'root' on 'gitlab-runner.flag.net.internal'. The challenge says to get to their web deployment. Looking again at the yaml, we see an ssh command to a wordpress server, we clean it up slightly and run it on our listener's shell.
 `ssh -i /etc/gitlab-runner/hhc22-wordpress-deploy root@wordpress.flag.net.internal`
@@ -172,5 +172,5 @@ ls
 cat flag.txt
 ```
 That gives us the flag *oI40zIuCcN8c3MhKgQjOMN8lfYtVqcKT* (ASCII art omitted) and we are done with the Elfen Ring. 
-![[ElvenRing_gold.jpg|200]]
-Jump to: [[KringleCon 2022 Orientation]] | [[Tolkien Ring]] | Elfen Ring | [[Web Ring]]| [[Cloud Ring]]|[[Burning Ring of Fire]]| [[KringleCon 2022 Wrap-up]]
+![200](ElvenRing_gold.jpg)
+Jump to: [KringleCon 2022 Orientation](KringleCon%202022%20Orientation.md) | [Tolkien Ring](Tolkien%20Ring.md) | Elfen Ring | [Web Ring](Web%20Ring.md)| [Cloud Ring](Cloud%20Ring.md)|[Burning Ring of Fire](Burning%20Ring%20of%20Fire.md)| [KringleCon 2022 Wrap-up](KringleCon%202022%20Wrap-up.md)

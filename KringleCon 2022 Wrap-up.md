@@ -1,5 +1,5 @@
 And we are done! Off to Santa's castle for a party, and look who's there! It's Grinchum, looking much better as Smilegol. 
-![[finale.jpg|1000]]
+![1000](finale.jpg)
 
 
 # Easter Eggs
@@ -13,14 +13,14 @@ During conversation, you find out that Glamtariel has one green, two blues and o
     "visit": "static/images/x_phial_pholder_2022/tomb2022-tommyeasteregg3847516894.png,230px,30px"
 }
 ```
-![[Pasted image 20230104235517.png]]
+![Pasted image 20230104235517](Pasted%20image%2020230104235517.png)
 
 ## Burning Ring of Fire
 ### Exploit a Smart Contract
 A typical Sporc NFT is worth about 100,000 KC, but someone noticed the following Sporc NFT was worth substantially more than the others:
-![[Pasted image 20230105001922.png|400]]
+![400](Pasted%20image%2020230105001922.png)
 I agree with the others, it's not a coincidence! 
-![[Pasted image 20230105002652.png]]
+![Pasted image 20230105002652](Pasted%20image%2020230105002652.png)
 
 # Credits
 - Thank you to SANS for hosting this fun challenge! 

@@ -1,4 +1,4 @@
-![[Pasted image 20230104225032.png|750]]
+![750](Pasted%20image%2020230104225032.png)
 ###  Naughty IP
 **Q1. The first attack is a [brute force](https://owasp.org/www-community/attacks/Brute_force_attack) login. What's the first username tried?**
 From the hint, Wireshark > Statistics > Conversations (sort by most bytes first),
@@ -18,7 +18,7 @@ First apply filter `ip.src == 18.222.86.32 and http  and http.request.method == 
 From the hint (https://www.sans.org/blog/cloud-instance-metadata-services-imds-/), IMDS listens on  169.254.169.254 so we want to find when the victim server (10.12.42.16) receives a successful response from IMDS, and the text includes credentials. Apply filter `ip.src_host ==  169.254.169.254 and http.response.code == 200`, that brings back four records. Reading the HTTP response text, only pframe number 32925 contains credentials, and the url is *http://169.254.169.254/latest/meta-data/identity-credentials/ec2/security-credentials/ec2-instance*.
 
 ###  Open Boria Mine Door
-![[Pasted image 20230104225403.png]]
+![Pasted image 20230104225403](Pasted%20image%2020230104225403.png)
 **Q1. Open the door to the Boria Mines. Help Alabaster Snowball in the Web Ring to get some hints for this challenge.**
 Discord hints mentioned svg:
 https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Getting_Started
@@ -70,7 +70,7 @@ Although this hint said to watch for CSP, it didn't seem to affect the method of
 ```
 ###  Glamtariel's Fountain
 
-![[GlamFount.jpg]]
+![GlamFount](GlamFount.jpg)
 
 **Stage 1: Collecting Info**
 To start, use browser dev tools to inspect network traffic when interacting. For this puzzle, interaction means dragging the little icons from the group of 4 on the right, and dropping them onto the princess or the fountain at the bottom of the screen. Notice that some requests send JSON to the server indicating which image was dropped (img1..4), and the target (princess or fountain).
@@ -84,7 +84,7 @@ To start, use browser dev tools to inspect network traffic when interacting. For
 Keep dropping the icons - at some point the icon group on the right refreshes. As the princess and fountain respond, they also give hints in CAPS - note them down.
 
 Also, at some point, there will be an "omninous" eye that the fountain asks you to click away. BEFORE you do that, note its path - `static/images/stage2ring-eyecu_2022.png`. 
-![[fountainEye.jpg]]
+![fountainEye](fountainEye.jpg)
 
 Eventually, you get to a point where the icon group no longer refreshes and the princess and fountain just repeat themselves. At this point, the full the hint list is TAMPER (don't tamper with cookie), TRAFFIC FLIES, PATHs (created path), PATH is closed,  APP, TYPE (of language), SIMPLE FORMAT and RINGLIST (file).  You also get the impression that the princess really likes rings - especially silver, which she doesn't have. 
 
@@ -156,7 +156,7 @@ When we send it over the console, we get the response
 ```
 **Stage 4: Following lots of links**
 Fetching that image (https://glamtarielsfountain.com/static/images/pholder-morethantopsupersecret63842.png) shows a picture of a folder with text "x_phial_pholder_2022" and a paper peeking out. The corner of the paper shows "bluering.txt", "redring.txt". 
-![[Pasted image 20230105000251.png]]
+![Pasted image 20230105000251](Pasted%20image%2020230105000251.png)
 
 We can try to fetch bluering.txt and redring.txt next (from this point I'll just show the body element for the XML, the request structure stays the same):. 
 ```javascript
@@ -194,7 +194,7 @@ That returns
 }
 ```
 Another day, another supersecretsomething.png.. we'll fetch that too. 
-![[Pasted image 20230105000442.png]]
+![Pasted image 20230105000442](Pasted%20image%2020230105000442.png)
 
 This turns out to be a picture of a red ring with text "goldring_to_be_deleted.txt " so we request that in XML:
 ```javascript
@@ -236,9 +236,9 @@ That returns the response:
     "visit": "static/images/x_phial_pholder_2022/goldring-morethansupertopsecret76394734.png,200px,290px"
 }
 ```
-![[Pasted image 20230105000540.png]]
+![Pasted image 20230105000540](Pasted%20image%2020230105000540.png)
 We grab the file, fill in the URL *https://glamtarielsfountain.com/static/images/x_phial_pholder_2022/goldring-morethansupertopsecret76394734.png* into our Objectives and we stagger out, half dead but still glorious, with our Web Ring.
-![[WebRing.jpg|200]]
+![200](WebRing.jpg)
 
 ***FAQ about Glamtariel's Quirks***
 - **Q**1: I get "Trying to TAMPER with Kringle's favorite cookie recipe or the entrance tickets can't help you Grinchum! I'm not sure what you are looking for but it isn't here! Get out!^Miserable trickster! Please click him out of here.! ."
@@ -246,4 +246,4 @@ We grab the file, fill in the URL *https://glamtarielsfountain.com/static/images
 - **Q2** : I get "Zoom, Zoom, very hasty, can't do that yet!"
 - **A2**: You need to get to the screen with 4 colorful rings before you can send your XML. Keep dragging and dropping icons onto the princess and fountain.  
 
-Jump to: [[KringleCon 2022 Orientation]] | [[Tolkien Ring]] | [[Elfen Ring]] | Web Ring| [[Cloud Ring]]|[[Burning Ring of Fire]]| [[KringleCon 2022 Wrap-up]]
+Jump to: [KringleCon 2022 Orientation](KringleCon%202022%20Orientation.md) | [Tolkien Ring](Tolkien%20Ring.md) | [Elfen Ring](Elfen%20Ring.md) | Web Ring| [Cloud Ring](Cloud%20Ring.md)|[Burning Ring of Fire](Burning%20Ring%20of%20Fire.md)| [KringleCon 2022 Wrap-up](KringleCon%202022%20Wrap-up.md)

@@ -1,4 +1,4 @@
-![[Pasted image 20230104222842.png| 900]]
+![ 900](Pasted%20image%2020230104222842.png)
 ## Tolkien Ring
 
 ### Wireshark Practice
@@ -137,12 +137,12 @@ alert http any any -> any any (file_data;content:"let byteCharacters = atob";msg
 ```
 
 With the above, we get our first golden ring - the Tolkien Ring. Nice LAN!
-![[TolkienRing_gold.jpg|250]]
+![250](TolkienRing_gold.jpg)
 
 Before you leave this hall, be sure to look for the hidden treasure chest by zooming out (Ctrl-) in the browser. There is a chest with a VERY helpful hint for the Burning Ring of Fire. You get there by trying to arrow down at various spots in the ground until you find the tunnel entrance.
-![[hiddenChestInTR.jpg]]
+![hiddenChestInTR](hiddenChestInTR.jpg)
 
 Also, look for another chest near the entrance to the Elfen Ring as you move to the next Ring.
-![[Pasted image 20230104224726.png | 500]]
+![ 500](Pasted%20image%2020230104224726.png%20)
 
-Jump to: [[KringleCon 2022 Orientation]] | Tolkien Ring | [[Elfen Ring]] | [[Web Ring]]| [[Cloud Ring]]|[[Burning Ring of Fire]]| [[KringleCon 2022 Wrap-up]]
+Jump to: [KringleCon 2022 Orientation](KringleCon%202022%20Orientation.md) | Tolkien Ring | [Elfen Ring](Elfen%20Ring.md) | [Web Ring](Web%20Ring.md)| [Cloud Ring](Cloud%20Ring.md)|[Burning Ring of Fire](Burning%20Ring%20of%20Fire.md)| [KringleCon 2022 Wrap-up](KringleCon%202022%20Wrap-up.md)
