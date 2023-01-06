@@ -60,4 +60,4 @@ There is another chest in the Hall of Talks:
 ![600](images/Pasted%20image%2020230104224421.png)
 
 
-Jump to: KringleCon 2022 Orientation | [Tolkien Ring](Tolkien%20Ring.md) | [Elfen Ring](Elfen%20Ring.md) | [Web Ring](Web%20Ring.md)| [Cloud Ring](Cloud%20Ring.md)|[Burning Ring of Fire](#Burning%20Ring%20of%20Fire.md)| [KringleCon 2022 Wrap Up](#%20KringleCon%202022%20Wrap-up.md)
+Jump to: KringleCon 2022 Orientation | [Tolkien Ring](Tolkien%20Ring.md) | [Elfen Ring](Elfen%20Ring.md) | [Web Ring](Web%20Ring.md)| [Cloud Ring](Cloud%20Ring.md)|[Burning Ring of Fire](Burning%20Ring%20of%20Fire.md)| [KringleCon 2022 Wrap Up](%20KringleCon%202022%20Wrap-up.md)

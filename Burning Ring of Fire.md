@@ -18,6 +18,7 @@ Return to this kiosk and use Hat ID: 23 to complete your purchase.
 ##  Blockchain Divination
 
 **Q1. Use the Blockchain Explorer in the Burning Ring of Fire to investigate the contracts and transactions on the chain. At what address is the KringleCoin smart contract deployed?**
+
 ![](images/Pasted%20image%2020230104232313.png)
 
 Go to the bottom level of the Burning Ring of Fire, click on the terminal on the right. If you time it right, e.g. you just bought a hat, you can recognize the record because it has your wallet in the FROM address. If there are a lot of transactions, you may have to browse back but eventually you find it and see the fields:
@@ -75,11 +76,12 @@ function do_presale(){
 Success! You are now the proud owner of BSRS Token #<Some Token>. You can find more information at https://boredsporcrowboatsociety.com/TOKENS/<Token>, or check it out in the gallery!
 ```
 
-Your brand new Sporc NFT is waiting in the gallery at https://boredsporcrowboatsociety.com/TOKENS/TOKENIMAGES/BSRS + \<Token\>.png. 
+Your brand new Sporc NFT is waiting in the gallery at https://boredsporcrowboatsociety.com/TOKENS/TOKENIMAGES/BSRS\<Token\>.png. 
 
 
 With proud Sporc in hand, we can now exit with the Burning Ring of Fire. 
+
 ![](images/FireRing.jpg)
 
 
-Jump to: [KringleCon 2022 Orientation](KringleCon%202022%20Orientation.md) | [Tolkien Ring](Tolkien%20Ring.md) | [Elfen Ring](Elfen%20Ring.md) | [Web Ring](Web%20Ring.md)| [Cloud Ring](Cloud%20Ring.md)|Burning Ring of Fire| [](#%20KringleCon%202022%20Wrap-up.md)
+Jump to: [KringleCon 2022 Orientation](KringleCon%202022%20Orientation.md) | [Tolkien Ring](Tolkien%20Ring.md) | [Elfen Ring](Elfen%20Ring.md) | [Web Ring](Web%20Ring.md)| [Cloud Ring](Cloud%20Ring.md)|Burning Ring of Fire| [KringleCon 2022 Wrap Up](%20KringleCon%202022%20Wrap-up.md)

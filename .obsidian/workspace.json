@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cloud Ring.md",
+                "file": "Burning Ring of Fire.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cloud Ring.md",
+                "file": "Burning Ring of Fire.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cloud Ring.md",
+                "file": "Burning Ring of Fire.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cloud Ring.md"
+                "file": "Burning Ring of Fire.md"
               }
             }
           }
@@ -138,12 +138,12 @@
   },
   "active": "65608b9d723777aa",
   "lastOpenFiles": [
+    "KringleCon 2022 Orientation.md",
+    "Cloud Ring.md",
     "Elfen Ring.md",
     "Tolkien Ring.md",
-    "Cloud Ring.md",
     "Burning Ring of Fire.md",
     "Web Ring.md",
-    "KringleCon 2022 Orientation.md",
     "README.md",
     "KringleCon 2022 Wrap-up.md",
     "images/Pasted image 2020230.md",
