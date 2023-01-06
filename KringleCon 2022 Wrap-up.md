@@ -26,3 +26,5 @@ I agree with the others, it's not a coincidence!
 ## Credits
 - Thank you to SANS for hosting this fun challenge! 
 - Many thanks to the helpful people on [Discord](https://discord.gg/Wbmx92rWW3) who spent countless hours helping me and others. 
+
+Go back to: [KringleCon 2022 Orientation](KringleCon%202022%20Orientation.md) | [Tolkien Ring](Tolkien%20Ring.md) | [Elfen Ring](Elfen%20Ring.md) | [Web Ring](Web%20Ring.md)| [Cloud Ring](Cloud%20Ring.md)|[Burning Ring of Fire](Burning%20Ring%20of%20Fire.md)| KringleCon 2022 Wrap Up|
