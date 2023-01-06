@@ -6,21 +6,26 @@
 Open the pcap in Wireshark. File > Export Objects, see options:  *DICOM, HTTP, IMF, SMB, TFTP* 
 
 **Q2. What is the file name of the largest file we can export?**
+
 File > Export Objects > HTTP, see files listed. Largest is *app.php* with 808 kB - note that its units are KB, other files' units were in bytes.
 
 **Q3. What packet number starts that app.php file?**
+
 From earlier File > Export Objects window, the file starts in packet *687*. 
 
-**Q4.  What is the IP of the Apache server? **
+**Q4.  What is the IP of the Apache server?**
+
 Apache is a web server, so we first filter by 'http'. Then, looking at the destination of the first GET request, it shows *192.185.57.242*.
 
 **Q5.  What file is saved to the infected host?**
+
 Looking through the packet for app.php on Wireshark, there was Javascript which created and saved a file *Ref_Sept24-2020.zip*.
 ```js 
     saveAs(blob1, 'Ref_Sept24-2020.zip');
 ```
 **Q6. Attackers used bad TLS certificates in this traffic. Which countries were they registered to? Submit the names of the countries in alphabetical order separated by a commas (Ex: Norway, South Korea).**
-Helpful: https://richardatkin.com/post/2022/01/15/Identifying-and-retrieving-certificates-from-a-PCAP-file-using-Wireshark.html
+
+Helpful article: https://richardatkin.com/post/2022/01/15/Identifying-and-retrieving-certificates-from-a-PCAP-file-using-Wireshark.html
 - Find the handshake when the server responded in a TLS handshake
 Apply Filter `tls.handshake.type == 2 and tls.handshake.certicates_length > 0`
 -  Ensure out-of-order TCP packets are reassembled
@@ -36,6 +41,7 @@ From https://www.ssl.com/country-codes/, SS = South Sudan, IL = Israel
 So the answer is *Israel, South Sudan*.
 
 **Q7.  Is the host infected (Yes/No)?**
+
 Erm, *yes*? Because that's what the elf asked us to look at the terminal. Possible other sign: Wireshark highlighted some packets in red because it was sending RST, ACK.
 
 ## Windows Logs
@@ -52,8 +58,9 @@ For the rest of the puzzle, I found it easier to open the file in the bottom pan
 ```
 **Q3. The contents of the previous file were retrieved, changed, and stored to a variable by the attacker. This was done multiple times. Submit the last full PowerShell line that performed only these actions.**
 Using vi to looking through each Get-Content of Recipe, and noting any assignments to variables (marked by $), I saw:  
-Line 10243 
+ 
 ```
+Line 10243:
 Verbose 12/24/2022 3:01:20 AM   Microsoft-Windows-PowerShell    4104    Execute a Remote Command        Creating Scriptblock text (1 of 1):
 \$foo = Get-Content .\Recipe| % {\$_ -replace 'honey', 'fish oil'} \$foo | Add-Content -Path 'recipe_updated.txt'
 ```
@@ -99,14 +106,14 @@ $Verbose 10/13/2022 4:13:43 PM   Microsoft-Windows-PowerShell    4104    Execute
 Get-ItemProperty HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\* | Select-Object DisplayName, DisplayVersion, Publisher, InstallDate | Format-Table –AutoSize^M
 ^M
 ```
-9. Is the secret ingredient compromised (Yes/No)?
+**Q9**. Is the secret ingredient compromised (Yes/No)?
 Given that the substitution updated the ingredients, *yes*.
 
-10. What is the secret ingredient?
+**Q10**. What is the secret ingredient?
 From the substitution command above, it is *honey*.
 
 ## Suricata Regatta
-
+![](images/Pasted%20image%2020230105171825.png)
 Tips before starting
 - There are existing rules in the rules file you can study, as well as this document on Suricata [rule format](https://suricata.readthedocs.io/en/suricata-6.0.0/rules/intro.html).
 - There is a numbering convention for Suricata rule signatures, per [Digital Ocean](https://www.digitalocean.com/community/tutorials/understanding-suricata-signatures) custom rules are usually numbered  **1000000-1999999**.
