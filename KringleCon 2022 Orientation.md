@@ -20,6 +20,7 @@ Most of these options can also be accessed during gameplay through the bar at th
 **Story**:  Storyline unfolds as you play, with a progress bar (can be glitchy).  
 
 **Destinations**: Handy way to jump to a location if you have visited it before. Faster than watching your character lurch across the screen, a lifesaver when you explore a secret tunnel and can't find your way out. Some destinations initially show as '---' because they are inaccessible until you first solve a puzzle.
+
 ![500](images/Pasted%20image%2020230104214039.png)
 
 **Objectives**: What you need to do. In some cases, this is where you enter your answer for a puzzle.
