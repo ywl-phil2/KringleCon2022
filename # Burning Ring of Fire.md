@@ -1,6 +1,7 @@
-![Pasted image 20230104232024](Pasted%20image%2020230104232024.png)
-###  Buy a Hat
+![](images/Pasted%20image%2020230104232024.png)
+##  Buy a Hat
 **Q1. Travel to the Burning Ring of Fire and purchase a hat from the vending machine with KringleCoin.**
+
 1. Find the hat vending machine on the top level of Burning Ring of Fire
 2. Choose a hat, it has instructions like:
 ```
@@ -12,23 +13,27 @@ Return to this kiosk and use Hat ID: 23 to complete your purchase.
 4. Specify To Address (wallet address in instructions), Amount: 10, Your key: (given at the beginning of the game).
 5. Return to machine, click on 'Approved Transaction?', enter your wallet address (also given at the beginning) and the Hat ID from the machine. 
 
-###  Blockchain Divination
+##  Blockchain Divination
 
 **Q1. Use the Blockchain Explorer in the Burning Ring of Fire to investigate the contracts and transactions on the chain. At what address is the KringleCoin smart contract deployed?**
-![300](Pasted%20image%2020230104232313.png)
+![](images/Pasted%20image%2020230104232313.png)
+
 Go to the bottom level of the Burning Ring of Fire, click on the terminal on the right. If you time it right, e.g. you just bought a hat, you can recognize the record because it has your wallet in the FROM address. If there are a lot of transactions, you may have to browse back but eventually you find it and see the fields:
 ```
 From: <your wallet address>
 To: 0xc27A2D3DE339Ce353c0eFBa32e948a88F1C86554
 ```
+
 The TO-address (*0xc27A2D3DE339Ce353c0eFBa32e948a88F1C86554*) is that of the Kringle Coin smart contract.
 
-###  Exploit a Smart Contract
-![Pasted image 20230104232440](Pasted%20image%2020230104232440.png)
+##  Exploit a Smart Contract
+![](images/Pasted%20image%2020230104232440.png)
+
 **Q1.  Exploit flaws in a smart contract to buy yourself a Bored Sporc NFT. Find hints for this objective hidden throughout the tunnels.**
 1. Download the code from Professor Petabyte, location was given in a hint as  https://github.com/QPetabyte/Merkle_Trees
 2. If needed, install Docker and Linux subsys (for Windows machines) to run it.
 3. Examine merkletrees.py 
+
 From Readme, we should
 - Create a list of leaf values to include in the allowed list
 	- We will want to include OUR wallet address here
@@ -67,9 +72,12 @@ function do_presale(){
 ```
 Success! You are now the proud owner of BSRS Token #<Some Token>. You can find more information at https://boredsporcrowboatsociety.com/TOKENS/<Token>, or check it out in the gallery!
 ```
+
 Your brand new Sporc NFT is waiting in the gallery at https://boredsporcrowboatsociety.com/TOKENS/TOKENIMAGES/BSRS + \<Token\>.png. 
 
-With proud Sporc in hand, we can now exit with the Burning Ring of Fire. 
-![200](FireRing.jpg)
 
-Jump to: [KringleCon 2022 Orientation](KringleCon%202022%20Orientation.md) | [Tolkien Ring](Tolkien%20Ring.md) | [Elfen Ring](Elfen%20Ring.md) | [Web Ring](Web%20Ring.md)| [Cloud Ring](Cloud%20Ring.md)|Burning Ring of Fire| [KringleCon 2022 Wrap-up](KringleCon%202022%20Wrap-up.md)
+With proud Sporc in hand, we can now exit with the Burning Ring of Fire. 
+![](images/FireRing.jpg)
+
+
+Jump to: [KringleCon 2022 Orientation](KringleCon%202022%20Orientation.md) | [Tolkien Ring](Tolkien%20Ring.md) | [Elfen Ring](Elfen%20Ring.md) | [Web Ring](Web%20Ring.md)| [Cloud Ring](Cloud%20Ring.md)|Burning Ring of Fire| [](#%20KringleCon%202022%20Wrap-up.md)

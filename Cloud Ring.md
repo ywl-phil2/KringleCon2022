@@ -1,6 +1,8 @@
-### AWS CLI Intro
-![Pasted image 20230104225759](Pasted%20image%2020230104225759.png)
+# Cloud Ring
+## AWS CLI Intro
+![](images/Pasted%20image%2020230104225759.png)
 **Q1. Please configure the default aws cli credentials with the access key AKQAAYRKO7A5Q5XUY2IY, the secret key qzTscgNdcdwIo/soPKPoJn9sBrl5eMQQL19iO5uf and the region us-east-1 .**
+
  We follow the given reference https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html#cli-configure-quickstart-config
 ```shell
 $ aws configure
@@ -10,6 +12,7 @@ Default region name [None]: us-east-1
 Default output format [None]: json
 ```
 **Q2. To finish, please get your caller identity using the AWS command line. **
+
 ```shell
 $ aws sts get-caller-identity
 {
@@ -18,8 +21,8 @@ $ aws sts get-caller-identity
     "Arn": "arn:aws:iam::602143214321:user/elf_helpdesk"
 }
 ```
-### Trufflehog Search 
-![Pasted image 20230104230049](Pasted%20image%2020230104230049.png)
+## Trufflehog Search 
+![](images/Pasted%20image%2020230104230049.png)
 **Q1. Use Trufflehog to find secrets in a Git repo.  What's the name of the file that has AWS credentials?**
 1. Install trufflehog from https://github.com/trufflesecurity/trufflehog/releases and run it.
 ```shell
@@ -76,10 +79,12 @@ $ aws sts get-caller-identity
 ```
 We enter *put_policy.py* as the exposed file.
 
-###  Exploitation via AWS CLI
+##  Exploitation via AWS CLI
+
 NOTE: This question uses the same terminal as Trufflehog. 
 
 **Q1. Use the AWS CLI to find any policies attached to your user.**
+
 We know the  username is haug  from earlier call to get-caller-identity
 ```shell
 $ aws iam list-attached-user-policies --user-name haug
@@ -93,7 +98,9 @@ $ aws iam list-attached-user-policies --user-name haug
     "IsTruncated": false
 }
 ```
+
 **Q2. View or get the policy that is attached to your user.**
+
 We know the ARN from the AttachedPolicies result.
 ```shell
 $ aws iam get-policy --policy-arn "arn:aws:iam::602123424321:policy/TIER1_READONLY_POLICY"
@@ -107,6 +114,7 @@ $ aws iam get-policy --policy-arn "arn:aws:iam::602123424321:policy/TIER1_READON
 }
 ```
 **Q3. Attached policies can have versions. View the default version.**
+
 We know the default version is v1 from the DefaultVersionId of get-policy.
 ```
 $ aws iam get-policy-version --policy-arn "arn:aws:iam::602123424321:policy/TIER1_READONLY_POLICY" --version-id "v1"
@@ -166,6 +174,7 @@ $ aws iam list-user-policies --user-name haug
 }
 ```
 **Q5. use the AWS CLI to get the only inline policy for your user.**
+
 We know the policy name (S3Perms) based on the previous call to list-user-policies.
 ```shell
 $ aws iam get-user-policy --user-name haug --policy-name S3Perms
@@ -227,12 +236,15 @@ $ aws lambda get-function-url-config --function-name "smogmachine_lambda"
     ...
 }
 ```
-And that concludes the Cloud Ring. 
-![200](CloudRing.jpg)
 
+And that concludes the Cloud Ring. 
+![](images/CloudRing.jpg)
+
+## Treasure Alert
 Before you leave, remember to grab the treasure chest to the left of the room.
-![Pasted image 20230104225636](Pasted%20image%2020230104225636.png)
+![](images/Pasted%20image%2020230104225636.png)
 
 There will also be a chest en route to the Burning Ring of Fire.
-![Pasted image 20230104231937](Pasted%20image%2020230104231937.png)
-Jump to: [KringleCon 2022 Orientation](KringleCon%202022%20Orientation.md) | [Tolkien Ring](Tolkien%20Ring.md) | [Elfen Ring](Elfen%20Ring.md) | [Web Ring](Web%20Ring.md)| Cloud Ring|[Burning Ring of Fire](Burning%20Ring%20of%20Fire.md)| [KringleCon 2022 Wrap-up](KringleCon%202022%20Wrap-up.md)
+![](images/Pasted%20image%2020230104231937.png)
+
+Jump to: [KringleCon 2022 Orientation](KringleCon%202022%20Orientation.md) | [Tolkien Ring](Tolkien%20Ring.md) | [Elfen Ring](Elfen%20Ring.md) | [Web Ring](Web%20Ring.md)| Cloud Ring|[](#Burning%20Ring%20of%20Fire.md)| [](#%20KringleCon%202022%20Wrap-up.md)

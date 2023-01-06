@@ -93,17 +93,21 @@ commit e19f653bde9ea3de6af21a587e41e7a909db1ca5
 Author: knee-oh <sporx@kringlecon.com>
 
 $ git diff e19f653bde9ea3de6af21a587e41e7a909db1ca5~ 
------BEGIN OPENSSH PRIVATE KEY-----
-...
+------BEGIN OPENSSH PRIVATE KEY-----
+-b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+-QyNTUxOQAAACD+wLHSOxzr5OKYjnMC2Xw6LT6gY9rQ6vTQXU1JG2Qa4gAAAJiQFTn3kBU5
+-9wAAAAtzc2gtZWQyNTUxOQAAACD+wLHSOxzr5OKYjnMC2Xw6LT6gY9rQ6vTQXU1JG2Qa4g
+-AAAEBL0qH+iiHi9Khw6QtD6+DHwFwYc50cwR0HjNsfOVXOcv7AsdI7HOvk4piOcwLZfDot
+-PqBj2tDq9NBdTUkbZBriAAAAFHNwb3J4QGtyaW5nbGVjb24uY29tAQ==
 ------END OPENSSH PRIVATE KEY-----
 ...
 -ssh-ed25519 ...  sporx@kringlecon.com'
 ```
-So apparently the elf committed a private key, and ssh-ed25519 turns out to be  a protocol for public keys https://datatracker.ietf.org/doc/id/draft-ietf-curdle-ssh-ed25519-02.xml.
+So apparently the elf committed a private key. Looking up ssh-ed25519, it turns out to be  a protocol for public keys https://datatracker.ietf.org/doc/id/draft-ietf-curdle-ssh-ed25519-02.xml.
 
 ### Key Business
 
-A private key is a handy thing to have, so we go through the process of setting up the private files, and generating the public key too. Helpful links:
+A private key is a handy thing to have, so we go through the process of using it - we need to set up the private key files, and generating the corresponding public key too. Helpful links:
 - https://medium.com/@pyssion5/git-ssh-configuration-once-and-for-all-3a5f2b579315 
 - https://linuxize.com/post/using-the-ssh-config-file/ 
 - https://mokacoding.com/blog/how-to-verify-ssh-key-password/
@@ -116,7 +120,11 @@ echo 'Host gitlab.flag.net.internal
     IdentityFile ~/.ssh/id_ed25519' > ~/.ssh/config
 # Make key
 echo '-----BEGIN OPENSSH PRIVATE KEY-----
-.(PASTE CONTENTS FROM DIFF HERE - DO NOT REMOVE ANY WHITESPACE)
+-b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+-QyNTUxOQAAACD+wLHSOxzr5OKYjnMC2Xw6LT6gY9rQ6vTQXU1JG2Qa4gAAAJiQFTn3kBU5
+-9wAAAAtzc2gtZWQyNTUxOQAAACD+wLHSOxzr5OKYjnMC2Xw6LT6gY9rQ6vTQXU1JG2Qa4g
+-AAAEBL0qH+iiHi9Khw6QtD6+DHwFwYc50cwR0HjNsfOVXOcv7AsdI7HOvk4piOcwLZfDot
+-PqBj2tDq9NBdTUkbZBriAAAAFHNwb3J4QGtyaW5nbGVjb24uY29tAQ==
 -----END OPENSSH PRIVATE KEY-----'  > ~/.ssh/id_ed25519
 # Change the perms because it will only accept self-readable key
 sudo chmod 600 ~/.ssh/id_ed25519 
@@ -177,7 +185,7 @@ git push
 
 ```
 Now, sit and wait. THIS CAN TAKE A MINUTE OR TWO, but we are rewarded with a message on the listener that a connection was received.
-![cicd-terms](cicd-terms.jpg)
+![cicd-terms](images/cicd-terms.jpg)
 
 ### Rooting for the Flag
 
@@ -191,7 +199,7 @@ ls
 cat flag.txt
 ```
 
-That gives us the flag *oI40zIuCcN8c3MhKgQjOMN8lfYtVqcKT* (ASCII art omitted) and we are done with the Elfen Ring. 
+That gives us the flag *oI40zIuCcN8c3MhKgQjOMN8lfYtVqcKT*  and we are done with the Elfen Ring. 
 ![200](images/ElvenRing_gold.jpg)
 
-Jump to: [KringleCon 2022 Orientation](KringleCon%202022%20Orientation.md) | [Tolkien Ring](Tolkien%20Ring.md) | Elfen Ring | [Web Ring](Web%20Ring.md)| [Cloud Ring](Cloud%20Ring.md)|[Burning Ring of Fire](Burning%20Ring%20of%20Fire.md)| [KringleCon 2022 Wrap-up](KringleCon%202022%20Wrap-up.md)
+Jump to: [KringleCon 2022 Orientation](KringleCon%202022%20Orientation.md) | [Tolkien Ring](Tolkien%20Ring.md) | Elfen Ring | [Web Ring](Web%20Ring.md)| [Cloud Ring](Cloud%20Ring.md)|[](#Burning%20Ring%20of%20Fire.md)| [](#%20KringleCon%202022%20Wrap-up.md)
