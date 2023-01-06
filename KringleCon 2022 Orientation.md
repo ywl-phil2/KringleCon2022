@@ -1,28 +1,38 @@
 
 ![Orientation](images/Orientation.jpg)
-### Talk to Jingle Ringford
+## Talk to Jingle Ringford
 You start off in a snowy wasteland, and Jingle is the only character in sight. Click on him, repeatedly if needed, to get all the info.  Jingle gives you a badge, and instructs you to interact with the KTM for your wallet, and Cranberry Pi (described below).
 
-###  Get your badge
-Your badge is the yellow flower-like icon on your character - it's actually five golden rings.
+## Get your badge
+Your badge is the yellow flower-like icon on your character - it's actually five golden rings.  
+
 ![badgeOnChar](images/badgeOnChar.jpg)
 
 Clicking on it shows options you access throughout the game: 
 ![badgeOptions](images/badgeOptions.jpg)
+
+	
 Most of these options can also be accessed during gameplay through the bar at the left. From top to bottom: Story (book icon), Destionations (map pin), Objectives (checkbox), Hints (Info/I), Hats (Wizard hat), Achievements (ribbon).
 
 ![badge](images/badge.jpg)
 
-Options:
-- Story: Storyline unfolds as you play. Has a progress bar (though it occasionally glitches in calculating how much of the game is left)
-- Destinations: Handy way to jump to a location if you have visited it before. Faster than watching your character lurch across the screen, a lifesaver when you explore a secret tunnel and can't find your way out. Some destinations initially show as '---' because they are inaccessible until you first solve a puzzle.
+### What the Options Mean
+**Story**:  Storyline unfolds as you play, with a progress bar (can be glitchy).  
+
+**Destinations**: Handy way to jump to a location if you have visited it before. Faster than watching your character lurch across the screen, a lifesaver when you explore a secret tunnel and can't find your way out. Some destinations initially show as '---' because they are inaccessible until you first solve a puzzle.
 ![500](images/Pasted%20image%2020230104214039.png)
-- Objectives: What you need to do. In some cases, this is where you enter your answer for a puzzle.
-- Hints: You get several hints preloaded, but others come through talking with characters in the game or finding treasure chests. 
-- Hats: You start with none, but don't worry, you will have a chance to satisfy your sartorial sense at the Hat Vending Machine in the Burning Ring of Fire. Don't go too crazy though - each hat costs 10 Kringle Coin, and you may need some KC for another venture!
-- Talks: Links to the [KringleCon 2022 lectures](https://www.sans.org/mlp/holiday-hack-challenge/). Just good viewing overall, and some are of direct help in the game.
-- Achievements: As you finish a puzzle/objective, these are displayed along with links to Tweet your achievement.
-- Settings: Control the audio, chat icons, weather, and display. NOTE: the Chat List stores conversations with game characters. Sometimes an elf gives a hint, to access it you can go back and select the dropdown in the chat list to read it again. The chat list highlighted in the following picture:
+
+**Objectives**: What you need to do. In some cases, this is where you enter your answer for a puzzle.
+  
+**Hints**: You get several hints preloaded, but others come through talking with characters in the game or finding treasure chests.   
+
+**Hats**: You start with none, but don't worry, you will have a chance to satisfy your sartorial sense at the Hat Vending Machine in the Burning Ring of Fire. Don't go too crazy though - each hat costs 10 Kringle Coin, and you may need some KC for a puzzle!  
+
+**Talks**: Links to the [KringleCon 2022 lectures](https://www.sans.org/mlp/holiday-hack-challenge/). Just good viewing overall, and some are of direct help in the game.  
+
+**Achievements**: As you finish a puzzle/objective, these are displayed along with links to Tweet your achievement.  
+
+**Settings**: Control the audio, chat list and icons, weather, and display options. Chat List stores conversations with game characters, which is handy when an elf gives a hint and you want to access later.  The chat list is highlighted in the following picture:
 ![Pasted image 20230104222236](images/Pasted%20image%2020230104222236.png)
 And again in this picture where the player has moved to another part of the game, but wants to re-read what Jingle or Santa said by selecting from the chat list dropdown.
 ![Pasted image 20230104222617](images/Pasted%20image%2020230104222617.png)
