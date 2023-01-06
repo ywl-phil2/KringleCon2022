@@ -283,4 +283,4 @@ We grab the file, fill in the URL *https://glamtarielsfountain.com/static/images
 
 **A2**: You need to get to the screen with 4 colorful rings before you can send your XML. Keep dragging and dropping icons onto the princess and fountain until the icons change.  
 
-Jump to: [KringleCon 2022 Orientation](KringleCon%202022%20Orientation.md) | [Tolkien Ring](Tolkien%20Ring.md) | [Elfen Ring](Elfen%20Ring.md) | Web Ring| [Cloud Ring](Cloud%20Ring.md)|[Burning Ring of Fire](#Burning%20Ring%20of%20Fire.md)| [KringleCon 2022 Wrap-Up](#%20KringleCon%202022%20Wrap-up.md)
+Jump to: [KringleCon 2022 Orientation](KringleCon%202022%20Orientation.md) | [Tolkien Ring](Tolkien%20Ring.md) | [Elfen Ring](Elfen%20Ring.md) | Web Ring| [Cloud Ring](Cloud%20Ring.md)|[Burning Ring of Fire](#Burning%20Ring%20of%20Fire.md)| [KringleCon 2022 Wrap Up](KringleCon%202022%20Wrap-up.md)

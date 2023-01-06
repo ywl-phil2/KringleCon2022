@@ -82,4 +82,4 @@ With proud Sporc in hand, we can now exit with the Burning Ring of Fire.
 ![](images/FireRing.jpg)
 
 
-Jump to: [KringleCon 2022 Orientation](KringleCon%202022%20Orientation.md) | [Tolkien Ring](Tolkien%20Ring.md) | [Elfen Ring](Elfen%20Ring.md) | [Web Ring](Web%20Ring.md)| [Cloud Ring](Cloud%20Ring.md)|Burning Ring of Fire| [KringleCon Wrap Up](KringleCon%202022%20Wrap-up.md)
+Jump to: [KringleCon 2022 Orientation](KringleCon%202022%20Orientation.md) | [Tolkien Ring](Tolkien%20Ring.md) | [Elfen Ring](Elfen%20Ring.md) | [Web Ring](Web%20Ring.md)| [Cloud Ring](Cloud%20Ring.md)|Burning Ring of Fire| [KringleCon 2022 Wrap Up](KringleCon%202022%20Wrap-up.md)

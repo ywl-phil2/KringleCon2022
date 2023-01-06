@@ -18,7 +18,9 @@ During conversation, you find out that Glamtariel has one green, two blues and o
 ## Exploit a Smart Contract
 A typical Sporc NFT is worth about 100,000 KC, but someone noticed the following Sporc NFT was worth substantially more than the others:
 ![](images/Pasted%20image%2020230105001922.png)
+
 I agree with the others, it's not a coincidence! 
+
 ![](images/Pasted%20image%2020230105002652.png)
 
 ## Credits
