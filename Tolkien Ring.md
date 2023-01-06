@@ -1,6 +1,7 @@
-![ 900](images/Pasted%20image%2020230104222842.png)
 
 ## Wireshark Practice
+![](images/Pasted%20image%2020230105172206.png)
+
 **Q1.  There are objects in the PCAP file that can be exported by Wireshark and/or Tshark. What type of objects can be exported from this PCAP?**
 
 Open the pcap in Wireshark. File > Export Objects, see options:  *DICOM, HTTP, IMF, SMB, TFTP* 
@@ -45,6 +46,7 @@ So the answer is *Israel, South Sudan*.
 Erm, *yes*? Because that's what the elf asked us to look at the terminal. Possible other sign: Wireshark highlighted some packets in red because it was sending RST, ACK.
 
 ## Windows Logs
+![](images/Pasted%20image%2020230105172326.png)
 **Q1. What month/day/year did the attack take place? For example, 09/05/2021.**
 I started with viewing the log in the bottom frame (`$ more powershell.evtx.log`). It returned the following, with the answer of *12/24/2022*.
 ```log
@@ -113,7 +115,9 @@ Given that the substitution updated the ingredients, *yes*.
 From the substitution command above, it is *honey*.
 
 ## Suricata Regatta
+
 ![](images/Pasted%20image%2020230105171825.png)
+
 Tips before starting
 - There are existing rules in the rules file you can study, as well as this document on Suricata [rule format](https://suricata.readthedocs.io/en/suricata-6.0.0/rules/intro.html).
 - There is a numbering convention for Suricata rule signatures, per [Digital Ocean](https://www.digitalocean.com/community/tutorials/understanding-suricata-signatures) custom rules are usually numbered  **1000000-1999999**.
@@ -144,7 +148,9 @@ alert http any any -> any any (file_data;content:"let byteCharacters = atob";msg
 
 
 With the above, we get our first golden ring - the Tolkien Ring. Nice LAN!
+
 ![250](images/TolkienRing_gold.jpg)
+
 
 ## Treasure Alert! 
 Before you leave this hall, be sure to look for the hidden treasure chest by zooming out (Ctrl-) in the browser. There is a chest with a VERY helpful hint for the Burning Ring of Fire. You get there by trying to arrow down at various spots in the ground until you find the tunnel entrance.
