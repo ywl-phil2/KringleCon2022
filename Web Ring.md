@@ -227,8 +227,8 @@ This turns out to be a picture of a red ring with text "goldring_to_be_deleted.t
 and receive the response:
 ```json
 {
-    "appResp": "Hmmm, and I thought you wanted me to take a look at that pretty silver ring, but instead, you've made a pretty bold REQuest. That's ok, but even if I knew anything about such things, I'd only use a secret TYPE of tongue to discuss them.^She's definitely hiding something.",
- ...
+    "appResp": "Hmmm, and I thought you wanted me to take a look at that pretty silver ring, but instead, you've made a pretty bold REQuest. That's ok, but even if I knew anything about such things, I'd only use a secret TYPE of tongue to discuss them.^She's definitely hiding something."
+}
 ```
 ### Fair Trade: Silver for Gold
 
@@ -241,7 +241,7 @@ Now we've reached the (IMHO) most obtuse part of the puzzle.  I would NEVER have
 		- Usually img1..4 for json requests, or a trigger for XXE (&xxe;) with the ENTITY pointing to a known file location.
 		- We haven't guessed the silver ring file for XXE, so we will try img1 which is the silver ring's locator using json.
 	- **who**
-		- Has to be princess, fountain doesn't speak this tongue.
+		- Has to be princesss
 	- **reqType**
 		- So far, values have been json or xml.
 		- We still haven't found a place to mention the gold ring to the princess, plus the princess gave the hint of using REQ + TYPE.  So we use this field to trigger XXE, and have the file point to the goldring file we saw earlier. 
@@ -269,9 +269,14 @@ We grab the file, fill in the URL *https://glamtarielsfountain.com/static/images
 ![200](images/WebRing.jpg)
 
 ### Quirks/FAQs about Glamtariel's Fountain
-- **Q**1: I get "Trying to TAMPER with Kringle's favorite cookie recipe or the entrance tickets can't help you Grinchum! I'm not sure what you are looking for but it isn't here! Get out!^Miserable trickster! Please click him out of here.! ."
-- **A**1: Your session may have timed out. Refresh the browser, and watch the drop-request again. Use the  **"x-grinchum"** header value from the drop-request in any requests you send.
-- **Q2** : I get "Zoom, Zoom, very hasty, can't do that yet!"
-- **A2**: You need to get to the screen with 4 colorful rings before you can send your XML. Keep dragging and dropping icons onto the princess and fountain until the icons change.  
+
+**Q**1: I get "Trying to TAMPER with Kringle's favorite cookie recipe or the entrance tickets can't help you Grinchum! I'm not sure what you are looking for but it isn't here! Get out!^Miserable trickster! Please click him out of here.! .
+
+**A**1: Your session may have timed out. Refresh the browser, and watch the drop-request again. Use the  **"x-grinchum"** header value from the drop-request in any requests you send.
+
+
+**Q2** : I get "Zoom, Zoom, very hasty, can't do that yet!"
+
+**A2**: You need to get to the screen with 4 colorful rings before you can send your XML. Keep dragging and dropping icons onto the princess and fountain until the icons change.  
 
 Jump to: [KringleCon 2022 Orientation](KringleCon%202022%20Orientation.md) | [Tolkien Ring](Tolkien%20Ring.md) | [Elfen Ring](Elfen%20Ring.md) | Web Ring| [Cloud Ring](Cloud%20Ring.md)|[Burning Ring of Fire](Burning%20Ring%20of%20Fire.md)| [KringleCon 2022 Wrap-up](KringleCon%202022%20Wrap-up.md)
