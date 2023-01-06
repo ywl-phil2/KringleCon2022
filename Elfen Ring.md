@@ -155,7 +155,7 @@ deploy-job:
 ```
 The script looks super interesting - from https://docs.gitlab.com/ee/ci/yaml/gitlab_ci_yaml.htm and https://www.educba.com/linux-rsync/ it looks like deployment kicks off a process to rsync (remote sync) and create a remote shell (-e) with the ssh command, using root (Did someone say ROOT? Red alert!).
 
-We definitely want to sneak into that process running as root, so we will have to modify the yaml.  We set git up to sign our commits with the ssh key, using https://calebhearth.com/sign-git-with-ssh  and test an empty commit.
+We definitely want to sneak into that process running as root, so we will have to modify the yaml.  We set git up to sign our commits with the ssh key, using https://calebhearth.com/sign-git-with-ssh  as reference and test an empty commit.
 ```git
 git config --global user.email "sporx@kringlecon.com"
 git config --global user.name "knee-oh"

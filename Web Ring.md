@@ -57,7 +57,7 @@ Using the tutorial, it was a matter of drawing boxes with the right color and le
 </svg>
 ```
 
-### Lock 5
+### Lock 4
 
 Although this hint said to watch for CSP, it didn't seem to affect the method of using svg and Enter to submit.
 ```svg
@@ -179,6 +179,7 @@ When we send it over the console, we get the response
 ```
 ### Stage 4: Following lots of links
 Fetching that image (https://glamtarielsfountain.com/static/images/pholder-morethantopsupersecret63842.png) shows a picture of a folder with text "x_phial_pholder_2022" and a paper peeking out. The corner of the paper shows "bluering.txt", "redring.txt". 
+
 ![Pasted image 20230105000251](images/Pasted%20image%2020230105000251.png)
 
 
@@ -275,11 +276,11 @@ We grab the file, fill in the URL *https://glamtarielsfountain.com/static/images
 
 **Q**1: I get "Trying to TAMPER with Kringle's favorite cookie recipe or the entrance tickets can't help you Grinchum! I'm not sure what you are looking for but it isn't here! Get out!^Miserable trickster! Please click him out of here.! .
 
-**A**1: Your session may have timed out. Refresh the browser, and watch the drop-request again. Use the  **"x-grinchum"** header value from the drop-request in any requests you send.
+**A**1: Your session may have timed out. Refresh the browser, and watch the drop-request again. Update your request to use the  same **"x-grinchum"** header value as that of the drop-request.
 
 
 **Q2** : I get "Zoom, Zoom, very hasty, can't do that yet!"
 
 **A2**: You need to get to the screen with 4 colorful rings before you can send your XML. Keep dragging and dropping icons onto the princess and fountain until the icons change.  
 
-Jump to: [KringleCon 2022 Orientation](KringleCon%202022%20Orientation.md) | [Tolkien Ring](Tolkien%20Ring.md) | [Elfen Ring](Elfen%20Ring.md) | Web Ring| [Cloud Ring](Cloud%20Ring.md)|[](#Burning%20Ring%20of%20Fire.md)| [](#%20KringleCon%202022%20Wrap-up.md)
+Jump to: [KringleCon 2022 Orientation](KringleCon%202022%20Orientation.md) | [Tolkien Ring](Tolkien%20Ring.md) | [Elfen Ring](Elfen%20Ring.md) | Web Ring| [Cloud Ring](Cloud%20Ring.md)|[Burning Ring of Fire](#Burning%20Ring%20of%20Fire.md)| [KringleCon 2022 Wrap-Up](#%20KringleCon%202022%20Wrap-up.md)
