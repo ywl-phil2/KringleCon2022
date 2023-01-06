@@ -202,4 +202,4 @@ cat flag.txt
 That gives us the flag *oI40zIuCcN8c3MhKgQjOMN8lfYtVqcKT*  and we are done with the Elfen Ring. 
 ![200](images/ElvenRing_gold.jpg)
 
-Jump to: [KringleCon 2022 Orientation](KringleCon%202022%20Orientation.md) | [Tolkien Ring](Tolkien%20Ring.md) | Elfen Ring | [Web Ring](Web%20Ring.md)| [Cloud Ring](Cloud%20Ring.md)|[Burning Ring of Fire](Burning%20Ring%20of%20Fire.md)| [KringleCon 2022 Wrap Up](KringleCon%202022%20Wrap-up.md)
+Jump to: [KringleCon 2022 Orientation](KringleCon%202022%20Orientation.md) | [Tolkien Ring](Tolkien%20Ring.md) | Elfen Ring | [Web Ring](Web%20Ring.md) | [Cloud Ring](Cloud%20Ring.md) | [Burning Ring of Fire](Burning%20Ring%20of%20Fire.md) | [KringleCon 2022 Wrap Up](KringleCon%202022%20Wrap-up.md) 
