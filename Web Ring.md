@@ -34,7 +34,7 @@ From the hint (https://www.sans.org/blog/cloud-instance-metadata-services-imds-/
 Discord hints mentioned svg:
 https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Getting_Started
 
-Using the tutorial, it was a matter of drawing boxes with the right color and length. 
+Using the tutorial, it was a matter of drawing boxes with the right color and length.  Going left to right, top to bottom:
 
 ### Lock 1
 ```svg
@@ -57,13 +57,14 @@ Using the tutorial, it was a matter of drawing boxes with the right color and le
 </svg>
 ```
 
-### Lock 4
+### Lock 5
 
-This lock had an additional challenge because its javascript was stripping out quotes and angle brackets. To avoid it, use Enter to submit instead of clicking off (which would trigger the onBlur method that eventually does the stripping)
+Although this hint said to watch for CSP, it didn't seem to affect the method of using svg and Enter to submit.
 ```svg
 <svg version="1.1"      width="300" height="200"      xmlns="http://www.w3.org/2000/svg">    
-<line x1="0" x2="200" y1="40" y2="40" stroke="white" stroke-width="15"/>
-<line x1="0" x2="200" y1="125" y2="125" stroke="blue" stroke-width="15"/>
+<line x1="0" x2="200" y1="30" y2="30" stroke="lime" stroke-width="15"/>
+<line x1="0" x2="200" y1="80" y2="110" stroke="red" stroke-width="15"/>
+<line x1="0" x2="220" y1="120" y2="200" stroke="blue" stroke-width="15"/>
 </svg>
 ```
 
@@ -78,14 +79,16 @@ This lock also strips quotes and angle brackets, so again we use Enter key to su
 ```
 ### Lock 6
 
-Although this hint said to watch for CSP, it didn't seem to affect the method of using svg and Enter to submit.
+This lock had an additional challenge because its javascript was stripping out quotes and angle brackets. To avoid it, use Enter to submit instead of clicking off (which would trigger the onBlur method that eventually does the stripping)
 ```svg
 <svg version="1.1"      width="300" height="200"      xmlns="http://www.w3.org/2000/svg">    
-<line x1="0" x2="200" y1="30" y2="30" stroke="lime" stroke-width="15"/>
-<line x1="0" x2="200" y1="80" y2="110" stroke="red" stroke-width="15"/>
-<line x1="0" x2="220" y1="120" y2="200" stroke="blue" stroke-width="15"/>
+<line x1="0" x2="200" y1="40" y2="40" stroke="white" stroke-width="15"/>
+<line x1="0" x2="200" y1="125" y2="125" stroke="blue" stroke-width="15"/>
 </svg>
 ```
+
+![](images/Pasted%20image%2020230105222350.png)
+
 ##  Glamtariel's Fountain
 
 ![GlamFount](images/GlamFount.jpg)

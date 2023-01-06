@@ -40,7 +40,7 @@ And again in this picture where the player has moved to another part of the game
 ## Create a wallet
 
 The KTM is the machine to the left. No input is required to create a wallet - it checks your account and generates a WALLET and KEY. Be sure to **WRITE THESE DOWN!**  You also receive a starting balance of 5 Kringle Coin.
-![Pasted image 20230104220025](Pasted%20image%2020230104220025.png)
+![](images/Pasted%20image%2020230104220025.png)
 ## Use the terminal
 
 The terminal is the green-framed box on the table. Click on it and it shows tmux with some instructions. Type 'answer' in the top pane as requested.
@@ -60,4 +60,4 @@ There is another chest in the Hall of Talks:
 ![600](images/Pasted%20image%2020230104224421.png)
 
 
-Jump to: KringleCon 2022 Orientation | [Tolkien Ring](Tolkien%20Ring.md) | [Elfen Ring](Elfen%20Ring.md) | [Web Ring](Web%20Ring.md)| [Cloud Ring](Cloud%20Ring.md)|[](#Burning%20Ring%20of%20Fire.md)| [](#%20KringleCon%202022%20Wrap-up.md)
+Jump to: KringleCon 2022 Orientation | [Tolkien Ring](Tolkien%20Ring.md) | [Elfen Ring](Elfen%20Ring.md) | [Web Ring](Web%20Ring.md)| [Cloud Ring](Cloud%20Ring.md)|[Burning Ring of Fire](#Burning%20Ring%20of%20Fire.md)| [KringleCon 2022 Wrap Up](#%20KringleCon%202022%20Wrap-up.md)
